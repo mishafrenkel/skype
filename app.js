@@ -7,7 +7,7 @@ const mongoose = require("mongoose");
 const passport = require("passport");
 const cookieParser = require("cookie-parser");
 const cors = require("cors");
- 
+
 const app = express();
 
 const router = express.Router();
@@ -23,9 +23,9 @@ const userRoutes = require("./server/routers/user-routers")();
 
 
 
-const db = "mongodb://test:test@ds119988.mlab.com:19988/skypeclone";
+const db = "mongodb://mfrenkel:misha2011@node-s6qhj.mongodb.net/test";
 
-//const db = config.DB_Connection.URL; 
+//const db = config.DB_Connection.URL;
 const port = process.env.PORT || 3001;
 
 mongoose.Promise = global.Promise;

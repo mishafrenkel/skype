@@ -30,7 +30,7 @@ io.sockets.on('connection', socket => {
       console.log('joining room', room);
       socket.join(room);
     });
-  
+
     socket.on('send message', function(data) {
         console.log('sending room post', data.room);
         socket.broadcast.to(data.room).emit('conversation private post', {
@@ -38,7 +38,7 @@ io.sockets.on('connection', socket => {
         });
     });
 
-    
+
 
 
 });
