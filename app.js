@@ -23,7 +23,7 @@ const userRoutes = require("./server/routers/user-routers")();
 
 
 
-const db = "mongodb+srv://mfrenkel:misha2011@node-s6qhj.mongodb.net";
+const db = "node-s6qhj.mongodb.net";
 
 //const db = config.DB_Connection.URL;
 const port = process.env.PORT || 3001;
